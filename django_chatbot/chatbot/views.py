@@ -12,7 +12,7 @@ openai.api_key = openai_api_key
 
 def ask_openai(message):
     response = openai.Completion.create(
-        model = "text-davinci-003",
+        model = "text-davinci-003", ## Aller sur https://platform.openai.com/ pour changer le module
         prompt = message,
         max_tokens = 150,
         n=1,
